@@ -13,10 +13,10 @@ const HOSTNAME = 'localhost';
 
 // ── Route Map: URL path → HTML file ──
 const ROUTES = {
-  '/':        'pages/home.html',
-  '/home':    'pages/home.html',
-  '/about':   'pages/about.html',
-  '/contact': 'pages/contact.html',
+  '/':        'home.html',
+  '/home':    'home.html',
+  '/about':   'about.html',
+  '/contact': 'contact.html',
 };
 
 // ── Helper: Read and serve an HTML file asynchronously ──
