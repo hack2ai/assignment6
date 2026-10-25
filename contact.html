@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FreshWave - Contact Us</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',sans-serif;background:#f0f4ff;color:#1a1a2e;min-height:100vh}
+    nav{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);padding:0 6%;height:68px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:1.4rem;color:#1a1a2e}.logo span{color:#2B7FFF}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{text-decoration:none;font-weight:600;font-size:.92rem;color:#444;padding:.4rem 0;border-bottom:2px solid transparent;transition:all .2s}
+    .nav-links a:hover,.nav-links a.active{color:#2B7FFF;border-bottom-color:#2B7FFF}
+    .page-header{background:linear-gradient(135deg,#2B7FFF,#1a6ee0);padding:4rem 6%;text-align:center;color:#fff}
+    .page-header h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;margin-bottom:.6rem}
+    .page-header p{font-size:1rem;opacity:.9;max-width:500px;margin:0 auto}
+    /* CONTACT GRID */
+    .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;padding:4rem 6%;align-items:start}
+    /* INFO CARDS */
+    .info h2{font-size:1.4rem;font-weight:800;margin-bottom:1.5rem}
+    .info h2 span{color:#2B7FFF}
+    .info-card{display:flex;align-items:flex-start;gap:1rem;background:#fff;border-radius:16px;padding:1.2rem;margin-bottom:1rem;box-shadow:0 4px 16px rgba(0,0,0,.07)}
+    .info-card .ic{font-size:1.6rem;width:48px;height:48px;background:#e8f0ff;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .info-card h4{font-weight:700;font-size:.92rem;margin-bottom:.2rem}
+    .info-card p{font-size:.85rem;color:#5a6480}
+    /* FORM */
+    .form-box{background:#fff;border-radius:20px;padding:2.5rem;box-shadow:0 4px 24px rgba(0,0,0,.08)}
+    .form-box h2{font-size:1.4rem;font-weight:800;margin-bottom:.4rem}
+    .form-box p{color:#5a6480;font-size:.88rem;margin-bottom:1.8rem}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+    label{display:block;font-size:.82rem;font-weight:600;color:#1a1a2e;margin-bottom:.3rem}
+    input,select,textarea{width:100%;padding:.75rem 1rem;border:2px solid #e8edf5;border-radius:10px;font-size:.9rem;font-family:'Segoe UI',sans-serif;outline:none;transition:border-color .2s;background:#f8faff}
+    input:focus,select:focus,textarea:focus{border-color:#2B7FFF;background:#fff}
+    textarea{resize:none;height:100px;margin-bottom:1rem}
+    .btn-submit{width:100%;padding:.85rem;background:#2B7FFF;color:#fff;border:none;border-radius:50px;font-size:1rem;font-weight:700;cursor:pointer;font-family:'Segoe UI',sans-serif;box-shadow:0 4px 16px rgba(43,127,255,.3);transition:all .2s}
+    .btn-submit:hover{background:#1a6ee0;transform:translateY(-1px)}
+    .success{display:none;text-align:center;padding:1rem;background:#f0fdf4;border-radius:10px;color:#16a34a;font-weight:600;margin-top:1rem;font-size:.92rem}
+    footer{background:#0f172a;color:#94a3b8;padding:2rem 6%;text-align:center;font-size:.85rem}
+    footer .fl{color:#fff;font-weight:700}.fl span{color:#2B7FFF}
+    @media(max-width:700px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Fresh<span>Wave</span></div>
+    <ul class="nav-links">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <h1>Contact Us</h1>
+    <p>Get in touch with us — we'd love to hear from you and help you book a service!</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="info">
+      <h2>Get In <span>Touch</span></h2>
+      <div class="info-card">
+        <div class="ic">📧</div>
+        <div><h4>Email Us</h4><p>hello@freshwave.com</p></div>
+      </div>
+      <div class="info-card">
+        <div class="ic">📞</div>
+        <div><h4>Call Us</h4><p>+1 800 123 4567</p></div>
+      </div>
+      <div class="info-card">
+        <div class="ic">📍</div>
+        <div><h4>Our Location</h4><p>New York, NY 10001, USA</p></div>
+      </div>
+      <div class="info-card">
+        <div class="ic">🕐</div>
+        <div><h4>Working Hours</h4><p>Mon–Sat: 8AM – 8PM<br>Sunday: 10AM – 5PM</p></div>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <h2>Book a Service</h2>
+      <p>Fill in the form below and we'll get back to you within 24 hours.</p>
+      <div class="form-row">
+        <div><label>Full Name</label><input type="text" id="fname" placeholder="e.g. Tony Smith"/></div>
+        <div><label>Phone Number</label><input type="tel" id="fphone" placeholder="+1 234 567 8900"/></div>
+      </div>
+      <div style="margin-bottom:1rem"><label>Email Address</label><input type="email" id="femail" placeholder="tony@email.com"/></div>
+      <div style="margin-bottom:1rem">
+        <label>Service Type</label>
+        <select id="fservice">
+          <option value="">-- Select a service --</option>
+          <option>Wash & Fold</option>
+          <option>Dry Cleaning</option>
+          <option>Ironing</option>
+          <option>Stain Removal</option>
+          <option>Pickup & Delivery</option>
+        </select>
+      </div>
+      <label>Message (optional)</label>
+      <textarea id="fmsg" placeholder="Any special instructions or questions..."></textarea>
+      <button class="btn-submit" onclick="submitForm()">📅 Book Now</button>
+      <div class="success" id="successMsg">✅ Thank you! We will contact you within 24 hours.</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="fl">Fresh<span>Wave</span></div>
+    <p style="margin-top:.5rem">© 2024 FreshWave Laundry Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm() {
+      const name    = document.getElementById('fname').value.trim();
+      const phone   = document.getElementById('fphone').value.trim();
+      const email   = document.getElementById('femail').value.trim();
+      const service = document.getElementById('fservice').value;
+      if (!name || !phone || !email || !service) {
+        alert('⚠️ Please fill in all required fields!');
+        return;
+      }
+      document.getElementById('successMsg').style.display = 'block';
+      ['fname','fphone','femail','fmsg'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('fservice').value = '';
+    }
+  </script>
+</body>
+</html>

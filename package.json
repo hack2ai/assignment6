@@ -1,0 +1,9 @@
+{
+  "name": "freshwave-server",
+  "version": "1.0.0",
+  "description": "Assignment 6 - Node.js HTTP Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

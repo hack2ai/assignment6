@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FreshWave - About Us</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',sans-serif;background:#f0f4ff;color:#1a1a2e;min-height:100vh}
+    nav{background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);padding:0 6%;height:68px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:1.4rem;color:#1a1a2e}.logo span{color:#2B7FFF}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{text-decoration:none;font-weight:600;font-size:.92rem;color:#444;padding:.4rem 0;border-bottom:2px solid transparent;transition:all .2s}
+    .nav-links a:hover,.nav-links a.active{color:#2B7FFF;border-bottom-color:#2B7FFF}
+    /* PAGE HEADER */
+    .page-header{background:linear-gradient(135deg,#2B7FFF,#1a6ee0);padding:4rem 6%;text-align:center;color:#fff}
+    .page-header h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;margin-bottom:.6rem}
+    .page-header p{font-size:1rem;opacity:.9;max-width:500px;margin:0 auto}
+    /* ABOUT CONTENT */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding:4rem 6%;align-items:center}
+    .about-img{background:linear-gradient(135deg,#ddeeff,#c0d8ff);border-radius:24px;height:340px;display:flex;align-items:center;justify-content:center;font-size:7rem}
+    .about-text h2{font-size:1.8rem;font-weight:800;margin-bottom:1rem}
+    .about-text h2 span{color:#2B7FFF}
+    .about-text p{color:#5a6480;line-height:1.8;margin-bottom:1rem;font-size:.95rem}
+    /* VALUES */
+    .values{background:#fff;padding:4rem 6%}
+    .values h2{font-size:1.8rem;font-weight:800;text-align:center;margin-bottom:.5rem}
+    .values p.sub{text-align:center;color:#5a6480;margin-bottom:2.5rem}
+    .values-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem}
+    .val-card{padding:2rem;border:2px solid #e8edf5;border-radius:18px;text-align:center;transition:all .2s}
+    .val-card:hover{border-color:#2B7FFF;transform:translateY(-4px);box-shadow:0 10px 28px rgba(43,127,255,.12)}
+    .val-card .icon{font-size:2.4rem;margin-bottom:.8rem}
+    .val-card h4{font-weight:700;margin-bottom:.4rem}
+    .val-card p{font-size:.85rem;color:#5a6480;line-height:1.6}
+    /* TEAM */
+    .team{padding:4rem 6%}
+    .team h2{font-size:1.8rem;font-weight:800;text-align:center;margin-bottom:.5rem}
+    .team p.sub{text-align:center;color:#5a6480;margin-bottom:2.5rem}
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.5rem}
+    .team-card{background:#fff;border-radius:18px;padding:1.8rem;text-align:center;box-shadow:0 4px 18px rgba(0,0,0,.07);transition:all .2s}
+    .team-card:hover{transform:translateY(-4px)}
+    .team-card .avatar{font-size:3rem;margin-bottom:.8rem;background:#e8f0ff;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto .8rem}
+    .team-card h4{font-weight:700;margin-bottom:.2rem}
+    .team-card p{font-size:.82rem;color:#2B7FFF;font-weight:600}
+    footer{background:#0f172a;color:#94a3b8;padding:2rem 6%;text-align:center;font-size:.85rem}
+    footer .fl{color:#fff;font-weight:700}.fl span{color:#2B7FFF}
+    @media(max-width:700px){.about-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Fresh<span>Wave</span></div>
+    <ul class="nav-links">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about" class="active">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <h1>About FreshWave</h1>
+    <p>Learn about our story, values, and the team behind your freshest clothes.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-img">🧺</div>
+    <div class="about-text">
+      <h2>Who We <span>Are</span></h2>
+      <p>FreshWave has been delivering top-quality laundry services since 2022. We started with a simple mission: make laundry effortless for every household and business we serve.</p>
+      <p>We use eco-friendly detergents and energy-efficient machines to protect your clothes and the planet. Our team of dedicated professionals ensures every item is treated with the utmost care.</p>
+      <p>With over 240+ happy customers and 15+ services, FreshWave is your most trusted laundry partner.</p>
+    </div>
+  </div>
+
+  <div class="values">
+    <h2>Our Core Values</h2>
+    <p class="sub">What drives us every single day</p>
+    <div class="values-grid">
+      <div class="val-card"><div class="icon">🏆</div><h4>Premium Quality</h4><p>We never compromise on the quality of care your clothes receive.</p></div>
+      <div class="val-card"><div class="icon">🌿</div><h4>Eco-Friendly</h4><p>Green cleaning solutions to protect your clothes and the planet.</p></div>
+      <div class="val-card"><div class="icon">⚡</div><h4>Fast Turnaround</h4><p>24-hour turnaround without ever cutting corners on quality.</p></div>
+      <div class="val-card"><div class="icon">💰</div><h4>Affordable</h4><p>Competitive pricing with zero hidden charges. Always transparent.</p></div>
+    </div>
+  </div>
+
+  <div class="team">
+    <h2>Meet Our Team</h2>
+    <p class="sub">The people who keep your clothes fresh</p>
+    <div class="team-grid">
+      <div class="team-card"><div class="avatar">👨‍💼</div><h4>Rajan Mehta</h4><p>Founder & CEO</p></div>
+      <div class="team-card"><div class="avatar">👩‍🔬</div><h4>Priya Sharma</h4><p>Head of Operations</p></div>
+      <div class="team-card"><div class="avatar">👨‍🔧</div><h4>Anil Kumar</h4><p>Lead Technician</p></div>
+      <div class="team-card"><div class="avatar">👩‍💻</div><h4>Neha Patel</h4><p>Customer Success</p></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="fl">Fresh<span>Wave</span></div>
+    <p style="margin-top:.5rem">© 2024 FreshWave Laundry Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
