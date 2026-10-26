@@ -6,9 +6,9 @@
 
 ## 🚀 Live Demo
 
-🌐 **[View Live →](https://assignment6-xxxx.onrender.com)**
+🌐 **[View Live →](https://assignment6-ruddy.vercel.app/home)**
 
-&nbsp;&nbsp;&nbsp;&nbsp;**GitHub Repo →** https://github.com/hack2ai/assignment6
+**GitHub Repo →** https://github.com/hack2ai/assignment6
 
 ---
 
@@ -17,9 +17,9 @@
 ### 💻 Languages
 | Language | Usage |
 |----------|-------|
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **JavaScript** | Server logic, routing, file handling |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) **HTML5** | Structure of all 3 web pages |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) **CSS3** | Styling and responsive design |
+| **JavaScript** | Server logic, routing, file handling |
+| **HTML5** | Structure of all 3 web pages |
+| **CSS3** | Styling and responsive design |
 
 ### ⚙️ Runtime & Tools
 | Tool | Purpose |
@@ -27,7 +27,7 @@
 | 🟢 **Node.js v18+** | JavaScript runtime to run the server |
 | 📦 **npm** | Package manager (no external packages used) |
 | 🐙 **Git & GitHub** | Version control and code hosting |
-| ☁️ **Render.com** | Cloud deployment platform |
+| ☁️ **Vercel** | Cloud deployment platform |
 | 🖥️ **VS Code** | Code editor |
 
 ### 📦 Node.js Built-in Modules
@@ -70,6 +70,7 @@
 assignment6/
 ├── 📄 server.js        ← Main Node.js server (http module)
 ├── 📄 package.json     ← Project config & start script
+├── 📄 vercel.json      ← Vercel deployment config
 ├── 📄 README.md        ← You are here
 ├── 🌐 home.html        ← Home page (/home)
 ├── 🌐 about.html       ← About page (/about)
@@ -129,7 +130,7 @@ Client Request
       ▼
   Route Matching (ROUTES object)
       │
-      ├── ✅ Match Found → fs.readFile() → 200 OK + HTML
+      ├── ✅ Match Found → 200 OK + HTML Response
       │
       └── ❌ No Match   → Custom 404 Page
 ```
@@ -139,7 +140,7 @@ Client Request
 ## 📝 Key Concepts Used
 
 - **`http.createServer()`** — Creates the HTTP server
-- **`fs.readFile()`** — Asynchronously reads HTML files (non-blocking)
+- **`module.exports`** — Exports handler for Vercel serverless
 - **`process.env.PORT`** — Dynamic port for cloud deployment
 - **`res.writeHead()`** — Sets HTTP status codes and headers
 - **Route mapping object** — Clean, modular routing without Express
@@ -162,3 +163,5 @@ This project is for educational purposes — **Assignment 6** of the Web Develop
 <div align="center">
   <strong>⭐ Made with ❤️ using Node.js ⭐</strong>
 </div>
+
+<!-- Vercel deployment trigger v3 -->
