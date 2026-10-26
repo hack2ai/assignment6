@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-🌐 **[View Live →](https://assignment6-ruddy.vercel.app/home)**
+🌐 **[View Live →](https://assignment6-474twhkpj-mrjarvis2004-1586s-projects.vercel.app)**
 
 **GitHub Repo →** https://github.com/hack2ai/assignment6
 
